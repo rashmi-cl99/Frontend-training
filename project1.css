@@ -1,0 +1,113 @@
+body{
+  background: #eee;
+}
+
+.blockOneParent{
+  display: flex;
+   flex-direction: column;
+   justify-content: center;
+   text-align: center;
+}
+
+.blockTwoParent
+{
+  background-color: white;
+  display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.blockThreeParent
+{
+  display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+}
+
+.blockThreeChild
+{
+   flex-basis: 37%;
+}
+
+.blockFourParent
+{
+  display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+}
+
+
+.blockFiveParent{
+  display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+}
+
+h1 {
+    font-size: 3.5rem;
+    line-height: 1.2;
+    text-align: center;
+}
+
+
+.image
+{
+  width:83%;
+
+}
+
+ul {
+    /* max-width: 550px;
+    margin: 0 auto 50px auto; */
+    text-align: left;
+    line-height: 1.6;
+}
+
+
+
+
+li {
+    margin: 16px 0;
+}
+
+h3{
+  display: block;
+    font-size: 1.17em;
+
+    font-weight: bold;
+    margin: 4%;
+}
+
+#headline {
+    margin: 50px 0;
+    text-align: center;
+}
+
+#img-caption {
+    margin: 15px 0 5px 0;
+    text-align: center;
+}
+
+blockquote {
+    font-style: italic;
+    text-align: left;
+    margin: 2%;
+    flex-basis: 37%;
+}
+
+@media (max-width: 1120px) {
+.blockThreeChild
+{
+   flex-basis: 80%;
+}
+
+blockquote{
+  flex-basis: 80%;
+}
+
+
+}
