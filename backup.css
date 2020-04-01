@@ -1,0 +1,187 @@
+
+
+.imgSizeBlock1
+{
+   max-width: 100%;
+}
+
+.block1
+{
+  background-color: rgb(184, 221, 241);
+  padding:15px 0px 150px 0px;
+}
+
+.block1Container
+{
+  justify-content: center;
+}
+
+@media only screen and (max-width: 1000px) {
+
+   .headingSize {
+      font-size: 2em;
+   }
+
+}
+
+.imgSizeBlock2
+{
+  height: 500px;
+  /* width: 450px; */
+  max-width: 100%;
+}
+
+.block3
+{
+  background-color: rgb(231, 238, 238);
+}
+
+
+.border
+{
+  background-color: white;
+}
+
+.fa-pause-circle-o , .fa-file-o , .fa-ban
+{
+
+  color: rgb(233, 56, 86);
+     background-color: pink;
+  border-radius: 50%;
+  padding: 15px;
+  font-size: 30px!important;
+
+  }
+
+  .fa-opera , .fa-book , .fa-clock-o
+  {
+    color: rgb(236, 79, 6);
+  /* width: 42px; */
+   background-color: rgb(175, 157, 124);
+  border-radius: 50%;
+   padding: 15px;
+   font-size: 30px!important;
+
+  }
+
+.fa-diamond
+{
+  color: rgb(247, 12, 157);
+}
+
+.fa-plus-square-o
+{
+  color: orange;
+}
+
+.fa-optin-monster
+{
+  color: rgb(95, 109, 235);
+}
+.iconSize
+{
+  font-size: 45px;
+  min-width: 82px;
+}
+
+
+.numbersSize
+{
+  font-size: 42px;
+  color:rgb(42, 38, 99);
+}
+.fiveIcons
+{
+  overflow-x: scroll;
+}
+
+
+.block5Bground
+{
+  background-color: rgb(21, 18, 63);;
+}
+
+.borderWidth
+{
+  border-width: medium;
+}
+
+.block6Param
+{
+  color: rgb(85, 83, 83);
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.block7Bground
+{
+  background-color: rgb(211, 233, 233);
+  color: black;
+}
+
+.block7Images
+{
+  position: relative;
+}
+
+.block8Img
+{
+  margin: 3px;
+  width: 100%;
+  padding: 25px;
+}
+
+.rounded-circle
+{
+  width: 100%;
+}
+
+.block9ground
+{
+   background-color: rgb(211, 233, 233);
+}
+
+.hrLine
+{
+  border-width: medium;
+}
+
+
+.block11
+{
+  background-color: rgb(211, 233, 233);
+}
+
+
+.lineHeightblock11
+{
+  line-height: 6px;
+}
+
+
+.socialMediaIcons
+{
+  color: white;
+  background-color: rgb(53, 150, 230);
+  border-radius: 50%;
+  padding: 8px;
+}
+
+.lastBlock
+{
+  line-height: 1px;
+}
+
+.block7Img1
+{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: rgb(75, 77, 77);
+  opacity: 0.6;
+  font-weight: bold;
+  color: white;
+  margin: 0px 2px 4px 2px;
+}

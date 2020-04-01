@@ -1,32 +1,41 @@
-.imgSizeBlock1
-{
-   height:250px;
+.navbar-brand {
+  font-size: 2 rem !important;
+  color: black
+}
+
+.imgSizeBlock1 {
+  max-width: 100%;
 }
 
 .block1
 {
-  background-color: rgb(184, 221, 241);
-  padding:15px 25px 150px 40px;
+  background-color: aliceblue;
 }
+
+/* Block 2 */
 
 .imgSizeBlock2
 {
-  height: 500px;
-  width: 450px;
+  max-width: 100%;
 }
+
+
+/* Block 3 */
 
 .block3
 {
-  background-color: rgb(231, 238, 238);
+   background-color: aliceblue;
+   padding-top: 25px;
+   padding-bottom: 25px;
 }
 
 
-
-
-
-.border
+.block3SubCards
 {
   background-color: white;
+  text-align: center;
+  box-shadow: 25px;
+  margin-bottom: 25px;
 }
 
 .fa-pause-circle-o , .fa-file-o , .fa-ban
@@ -35,19 +44,32 @@
   color: rgb(233, 56, 86);
      background-color: pink;
   border-radius: 50%;
+  padding: 15px;
+  font-size: 30px!important;
 
   }
 
   .fa-opera , .fa-book , .fa-clock-o
   {
     color: rgb(236, 79, 6);
-  /* width: 42px; */
    background-color: rgb(175, 157, 124);
-  border-radius: 40%;
+  border-radius: 50%;
+   padding: 15px;
+   font-size: 30px!important;
 
   }
 
-.fa-diamond
+
+
+  /* Block 4 */
+
+  .block4Image
+  {
+    max-width: 100%;
+  }
+
+
+  .fa-diamond
 {
   color: rgb(247, 12, 157);
 }
@@ -64,19 +86,23 @@
 .iconSize
 {
   font-size: 45px;
+  min-width: 82px;
 }
 
+/* Block 5 */
 
 .numbersSize
 {
-  font-size: 62px;
   color:rgb(42, 38, 99);
 }
 
+/* Block 6 */
 
-.block5Bground
+.block6
 {
-  background-color: rgb(21, 18, 63);;
+  background-color: rgb(21, 18, 63);
+  color: white;
+  padding-top: 28px;
 }
 
 .borderWidth
@@ -84,73 +110,102 @@
   border-width: medium;
 }
 
-.block6Param
+
+
+/* Block 7 */
+
+
+.block7Image
+{
+  max-width: 100%;
+}
+
+
+.block7Param
 {
   color: rgb(85, 83, 83);
-  font-size: 24px;
-  margin-top: 10px;
+  font-size: 14px;
+  margin-top: 20px;
 }
 
-.block7Bground
+
+
+/* Block 8 */
+
+.block8
 {
-  background-color: rgb(211, 233, 233);
-  color: black;
+  background-color:  aliceblue;
+  padding-top: 20px;
 }
 
-.block7Images
+.block8Images
+{
+  max-width: 100%;
+
+}
+
+
+.gallery {
+-webkit-column-count: 3;
+-moz-column-count: 3;
+column-count: 3;
+-webkit-column-width: 33%;
+-moz-column-width: 33%;
+column-width: 33%; }
+.gallery .pics {
+-webkit-transition: all 350ms ease;
+transition: all 350ms ease;
+}
+
+
+@media (max-width: 450px) {
+.gallery {
+-webkit-column-count: 1;
+-moz-column-count: 1;
+column-count: 1;
+-webkit-column-width: 100%;
+-moz-column-width: 100%;
+column-width: 100%;
+}
+}
+
+@media (max-width: 900px) and (min-width: 600px) {
+.gallery {
+-webkit-column-count: 2;
+-moz-column-count: 2;
+column-count: 2;
+-webkit-column-width: 50%;
+-moz-column-width: 50%;
+column-width: 50%;
+}
+}
+
+
+/* Block 9 */
+.block9Image
+{
+  max-width: 100%;
+}
+
+
+
+/* Block 10 */
+.block10
+{
+  background-color: aliceblue;
+}
+
+.block10Image
+{
+  max-width: 100%;
+}
+
+.block10Images
 {
   position: relative;
 }
 
-.block8Img
-{
-  margin: 3px;
-  width: 150px;
-  padding: 25px;
-}
-
-.rounded-circle
-{
-  width: 100%;
-}
-
-.block9ground
-{
-   background-color: rgb(211, 233, 233);
-}
-
-.hrLine
-{
-  border-width: medium;
-}
-
-
-.block11
-{
-  background-color: rgb(211, 233, 233);
-}
-
-
-.lineHeightblock11
-{
-  line-height: 6px;
-}
-
-
-.fa-twitter , .fa-facebook , .fa-instagram , .fa-linkedin
-{
-  color: white;
-  background-color: rgb(53, 150, 230);
-  border-radius: 50%;
-  padding: 8px;
-}
-
-.lastBlock
-{
-  line-height: 1px;
-}
-
-.block7Img1
+.block10Img1
 {
   position: absolute;
   bottom: 0;
@@ -162,4 +217,68 @@
   font-weight: bold;
   color: white;
   margin: 0px 2px 4px 2px;
+}
+
+
+/* Block 11*/
+.block8Img
+{
+  max-width: 100%;
+}
+
+
+
+/* Block 12 */
+
+.block12
+{
+  background-color: aliceblue;
+
+}
+
+
+
+.heading
+{
+  color: rgb(99, 97, 97);
+  font-size: 29px;
+  font-style: normal;
+}
+
+.hrLine
+{
+  border-width: medium;
+  margin-top: 28px;
+}
+.faplus
+{
+  text-align-last: end;
+}
+
+
+/* Block 14 */
+
+.block14
+{
+  background-color: aliceblue;
+}
+
+.socialMediaIcons
+{
+  color: white;
+  background-color: rgb(53, 150, 230);
+  border-radius: 50%;
+  padding: 8px;
+}
+
+.lineHeightblock14
+{
+  line-height: 4px;
+}
+
+/* Block 15 */
+
+.blocklineheight15
+{
+  line-height: 1px;
 }
