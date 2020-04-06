@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>program 7</title>
+  </head>
+
+  <body>
+    <h1>loop through inside using for loop and take the first ouid occurrence.
+      hint: check properties object only if static flag is 0</h1>
+
+
+    <script>
+      data = {
+        123: {
+          1231: {
+            "staticFlag": 1,
+            "properties": {}
+          },
+          1232: {
+            "staticFlag": 1,
+            "properties": {}
+          },
+          "keys": [ 1231, 1232 ],
+        },
+        456: {
+          4561: {
+            "staticFlag": 1,
+            "properties": {}
+          },
+          4562: {
+            "staticFlag": 1,
+            "properties": {}
+          },
+          "keys": [ 4561, 4562 ],
+        },
+        789: {
+          7891: {
+            "staticFlag": 0,
+            "properties": {
+              "ouID": 2045
+            },
+          },
+          7892: {
+            "staticFlag": 0,
+            "properties": {
+              "ouID": 2046
+            }
+          },
+          "keys": [ 7891, 7892 ],
+        },
+        "keys": [ 123, 456, 789 ]
+      }
+
+
+
+      var infff =[];
+
+      for (let property in data) {
+
+        for (let innerProperty in data[property]) {
+
+          if(data[ property ][ innerProperty ].hasOwnProperty('staticFlag') && data[ property ][ innerProperty ]['staticFlag'] == 0){
+
+            if(data[ property ][ innerProperty ][ 'properties'].hasOwnProperty('ouID')){
+
+              infff.push(data[ property ][ innerProperty ][ 'properties' ].ouID);
+              break;
+
+            }
+
+          }
+
+        }
+
+      }
+
+
+    </script>
+  </body>
+
+</html>

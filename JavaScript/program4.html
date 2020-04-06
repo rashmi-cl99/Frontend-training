@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Use array.map to add another new key to the all object length and value will be name length. and use array.filter function to filter the object which have even length.</h1>
+
+  <h1> Even Objects Name:  <span id="evenNumbers">  </span></h1>
+  <script>
+    users = {
+        "data": [
+          {
+            "name": "charan",
+            "id": 1
+          },
+          {
+            "name": "arjit",
+            "id": 2
+          },
+          {
+            "name": "swati",
+            "id": 3
+          },
+          {
+            "name": "amarendra",
+            "id": 4
+          }
+        ]
+      }
+
+
+      // Add new key and assign name lenth
+        let filterArray = users.data
+        filterArray.map((e) => {
+          e.newKey = e.name.length;
+        });
+        console.log(filterArray);
+
+
+
+        //The object which as even length
+
+        var evenObjects = filterArray.filter(res => {
+            if (res.newKey % 2 == 0) {
+              return true;
+            }
+          });
+
+          document.getElementById("evenNumbers").innerHTML = evenObjects[0].name;
+         console.log(evenObjects);
+
+
+  </script>
+</body>
+</html>

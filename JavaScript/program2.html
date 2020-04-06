@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Program 2</title>
+</head>
+<body>
+  <h1> Use filter function to show the user id having even number </h1>
+<h1> Even Numbers : <span id="evenFilterId"></span> </h1>
+  <script>
+
+    users = {
+        "data": [
+          {
+            "name": "charan",
+            "id": 1
+          },
+          {
+            "name": "arjit",
+            "id": 2
+          },
+          {
+            "name": "swati",
+            "id": 3
+          },
+          {
+            "name": "amarendra",
+            "id": 4
+          },
+          {
+          "name": "abc",
+          "id": 98
+        },
+        {
+          "name": "xyz",
+          "id": 99
+        }
+        ]
+      }
+
+      var storeIds = users.data.filter(res =>
+       {
+         if(res.id % 2 == 0)
+         {
+           return true;
+         }
+
+       })
+
+
+       var storeIdvalues = [];
+       storeIds.filter(value =>
+       {
+         storeIdvalues.push(value.id);
+       })
+
+
+       document.getElementById("evenFilterId").innerHTML = storeIdvalues;
+
+  </script>
+</body>
+</html>

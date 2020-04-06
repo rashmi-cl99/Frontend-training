@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Program 6</title>
+</head>
+<body>
+<h1>Use javascript interval es6 function to add 5 epoc values everysecond in an array</h1>
+
+  <script>
+  var ts = "2016-02-21T02:14:39";
+
+  var unix_seconds = ((new Date(ts)).getTime()) / 1000;
+
+  console.log(unix_seconds);
+
+  var myVar = setInterval(myTimer, 1000);
+
+  arr = [];
+    function myTimer() {
+      var d = new Date() /1000;
+      arr.push(d);
+    if(arr.length > 5) {
+    return false;
+  }
+}
+    console,log("arr",arr);
+  </script>
+</body>
+</html>
