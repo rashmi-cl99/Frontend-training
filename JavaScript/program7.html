@@ -10,6 +10,7 @@
   <body>
     <h1>loop through inside using for loop and take the first ouid occurrence.
       hint: check properties object only if static flag is 0</h1>
+      <h1 id="result"></h1>
 
 
     <script>
@@ -56,7 +57,7 @@
 
 
 
-      var infff =[];
+      var ouIdOutput =[];
 
       for (let property in data) {
 
@@ -66,7 +67,7 @@
 
             if(data[ property ][ innerProperty ][ 'properties'].hasOwnProperty('ouID')){
 
-              infff.push(data[ property ][ innerProperty ][ 'properties' ].ouID);
+              ouIdOutput.push(data[ property ][ innerProperty ][ 'properties' ].ouID);
               break;
 
             }
@@ -77,6 +78,7 @@
 
       }
 
+      document.getElementById("result").innerHTML = ouIdOutput;
 
     </script>
   </body>
